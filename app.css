@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box; }
+
+section {
+  width: 1130px;
+  height: 445px;
+  margin: 0 auto; }
+
+.hero {
+  position: absolute;
+  display: flex;
+  z-index: -1; }
+
+.img-bg {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 88vh;
+  overflow: hidden; }
+  .header .l-block {
+    width: 50vw;
+    height: 640px;
+    background-color: black; }
+    .header .l-block .left {
+      background-image: url("./assets/img/wood-right.png");
+      opacity: 0.2;
+      background-size: cover;
+      background-attachment: fixed; }
+  .header .r-block {
+    width: 50vw;
+    height: 580px;
+    background-color: black; }
+    .header .r-block .right {
+      background-image: url("./assets/img/wood-left.png");
+      opacity: 0.2;
+      background-size: cover;
+      background-attachment: fixed; }
+  .header .mainNameHeader {
+    width: 619px;
+    height: 228px;
+    position: absolute;
+    top: 189px;
+    left: 600px; }
+    .header .mainNameHeader .mainName {
+      color: white;
+      margin: auto;
+      letter-spacing: 15px;
+      font-size: 92px;
+      font-weight: bold;
+      word-wrap: normal; }
+
+.about-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  position: relative; }
+  .about-section .image-container .layout {
+    position: absolute;
+    background-color: #BC9A44;
+    width: 334px;
+    height: 446px;
+    z-index: -1;
+    top: -41px;
+    left: -87px; }
+  .about-section .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 478px;
+    justify-content: space-around; }
+    .about-section .text-container .title-container {
+      display: flex;
+      flex-direction: row;
+      width: 175px;
+      justify-content: space-evenly; }
+      .about-section .text-container .title-container .rectAbout {
+        width: 9px;
+        height: 44px;
+        background-color: #BC9A44; }
+      .about-section .text-container .title-container h3 {
+        font-size: 27px;
+        text-transform: uppercase; }
+    .about-section .text-container .text-wrapper {
+      width: 445px; }
+      .about-section .text-container .text-wrapper h3 {
+        font-size: 27px;
+        text-transform: uppercase;
+        line-height: 32px;
+        letter-spacing: 0.1em; }
+      .about-section .text-container .text-wrapper p {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.1em;
+        color: #B27E7E;
+        font-family: 'Raleway', sans-serif; }
+  .about-section .button-container {
+    position: relative;
+    background-color: white;
+    border: 1px solid #BC9A44;
+    color: white;
+    width: 204px;
+    height: 54px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    padding-left: 44px; }
+    .about-section .button-container .rectButton {
+      position: absolute;
+      width: 150px;
+      height: 2px;
+      background-color: black;
+      left: 190px;
+      top: 26px; }
+    .about-section .button-container button {
+      margin: auto;
+      border: none;
+      background-color: white;
+      text-transform: uppercase;
+      font-size: 16px;
+      text-align: center;
+      text-decoration: none; }
+
+.shop-section {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-bottom: 100px; }
+  .shop-section .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 478px; }
+    .shop-section .text-container .title-container {
+      display: flex;
+      flex-direction: row;
+      width: 100px;
+      justify-content: space-evenly; }
+      .shop-section .text-container .title-container .rectAbout {
+        width: 9px;
+        height: 44px;
+        background-color: #BC9A44; }
+      .shop-section .text-container .title-container h3 {
+        font-size: 27px;
+        text-transform: uppercase; }
+    .shop-section .text-container .text-wrapper {
+      width: 445px; }
+      .shop-section .text-container .text-wrapper p {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.1em;
+        color: #B27E7E;
+        font-family: 'Raleway', sans-serif; }
+    .shop-section .text-container .button-container {
+      position: relative;
+      background-color: white;
+      border: 1px solid #BC9A44;
+      color: white;
+      width: 204px;
+      height: 54px;
+      padding-top: 19px;
+      padding-bottom: 16px;
+      padding-left: 44px; }
+      .shop-section .text-container .button-container .rectButton {
+        position: absolute;
+        width: 150px;
+        height: 2px;
+        background-color: black;
+        left: 190px;
+        top: 26px; }
+      .shop-section .text-container .button-container button {
+        margin: auto;
+        border: none;
+        padding-left: 10px;
+        background-color: white;
+        text-transform: capitalize;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none; }
+  .shop-section .image-container {
+    display: flex; }
+    .shop-section .image-container .layout {
+      position: absolute;
+      background-color: #BC9A44;
+      width: 516px;
+      height: 345px;
+      z-index: -1;
+      top: -20px;
+      right: 20px; }
+
+.final-section {
+  margin: auto;
+  width: 998px;
+  height: 420px;
+  display: flex;
+  justify-content: space-between; }
+  .final-section .text1 {
+    padding-top: 150px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border: 1px solid black;
+    margin: 30px;
+    -webkit-box-shadow: 6px 15px 23px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 15px 23px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 15px 23px -5px rgba(0, 0, 0, 0.75); }
+  .final-section .text2 {
+    padding-top: 150px;
+    padding-left: 27px;
+    padding-right: 27px;
+    border: 1px solid black;
+    margin: 30px;
+    -webkit-box-shadow: 6px 15px 23px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 15px 23px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 15px 23px -5px rgba(0, 0, 0, 0.75); }
+
+/*# sourceMappingURL=app.css.map */

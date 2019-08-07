@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+$gold:#BC9A44;
+$text:#B27E7E;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap');
+
+section {
+    width: 1130px;
+    height: 445px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: absolute;
+    display: flex;
+    z-index: -1;
+}
+
+.img-bg {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+    .l-block {
+        width: 50vw;
+        height: 640px;
+        background-color: black;
+        .left {
+            background-image: url("./assets/img/wood-right.png");
+            opacity: 0.2;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
+    .r-block {
+        width: 50vw;
+        height: 580px;
+        background-color: black;
+        .right {
+            background-image: url("./assets/img/wood-left.png");
+            opacity: 0.2;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    }
+    .mainNameHeader {
+        width: 619px;
+        height: 228px;
+        position: absolute;
+        top: 189px;
+        left: 600px;
+        .mainName {
+            color: white;
+            margin: auto;
+            letter-spacing: 15px;
+            font-size: 92px;
+            font-weight: bold;
+            word-wrap: normal;
+        }
+    }
+}
+
+.about-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    .image-container {
+        .layout {
+            position: absolute;
+            background-color: $gold;
+            width: 334px;
+            height: 446px;
+            z-index: -1;
+            top: -41px;
+            left: -87px;
+        }
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        width: 478px;
+        justify-content: space-around;
+        .title-container {
+            display: flex;
+            flex-direction: row;
+            width: 175px;
+            justify-content: space-evenly;
+            .rectAbout {
+                width: 9px;
+                height: 44px;
+                background-color: $gold;
+            }
+            h3 {
+                font-size: 27px;
+                text-transform: uppercase;
+            }
+        }
+        .text-wrapper {
+            width: 445px;
+            h3 {
+                font-size: 27px;
+                text-transform: uppercase;
+                line-height: 32px;
+                letter-spacing: 0.1em;
+            }
+            p {
+                font-size: 16px;
+                line-height: 160%;
+                letter-spacing: 0.1em;
+                color: $text;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+    .button-container {
+        position: relative;
+        background-color: white;
+        border: 1px solid $gold;
+        color: white;
+        width: 204px;
+        height: 54px;
+        padding-top: 19px;
+        padding-bottom: 16px;
+        padding-left: 44px;
+        .rectButton {
+            position: absolute;
+            width: 150px;
+            height: 2px;
+            background-color: black;
+            left: 190px;
+            top: 26px;
+        }
+        button {
+            margin: auto;
+            border: none;
+            background-color: white;
+            text-transform: uppercase;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+    }
+}
+
+.shop-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 100px;
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 478px;
+        .title-container {
+            display: flex;
+            flex-direction: row;
+            width: 100px;
+            justify-content: space-evenly;
+            .rectAbout {
+                width: 9px;
+                height: 44px;
+                background-color: $gold;
+            }
+            h3 {
+                font-size: 27px;
+                text-transform: uppercase;
+            }
+        }
+        .text-wrapper {
+            width: 445px;
+            p {
+                font-size: 16px;
+                line-height: 160%;
+                letter-spacing: 0.1em;
+                color: $text;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+        .button-container {
+            position: relative;
+            background-color: white;
+            border: 1px solid $gold;
+            color: white;
+            width: 204px;
+            height: 54px;
+            padding-top: 19px;
+            padding-bottom: 16px;
+            padding-left: 44px;
+            .rectButton {
+                position: absolute;
+                width: 150px;
+                height: 2px;
+                background-color: black;
+                left: 190px;
+                top: 26px;
+            }
+            button {
+                margin: auto;
+                border: none;
+                padding-left: 10px;
+                background-color: white;
+                text-transform: capitalize;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+    .image-container {
+        display: flex;
+        .layout {
+            position: absolute;
+            background-color: $gold;
+            width: 516px;
+            height: 345px;
+            z-index: -1;
+            top: -20px;
+            right: 20px;
+        }
+    }
+}
+
+.final-section {
+    margin: auto;
+    width: 998px;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    .text1 {
+        padding-top: 150px;
+        padding-left: 27px;
+        padding-right: 27px;
+        border: 1px solid black;
+        margin: 30px;
+        -webkit-box-shadow: 6px 15px 23px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 15px 23px -5px rgba(0,0,0,0.75);
+        box-shadow: 6px 15px 23px -5px rgba(0,0,0,0.75);
+    }
+    .text2 {
+        padding-top: 150px;
+        padding-left: 27px;
+        padding-right: 27px;
+        border: 1px solid black;
+        margin: 30px;
+        -webkit-box-shadow: 6px 15px 23px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 15px 23px -5px rgba(0,0,0,0.75);
+        box-shadow: 6px 15px 23px -5px rgba(0,0,0,0.75);
+    }
+}
